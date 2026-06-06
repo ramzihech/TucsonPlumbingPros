@@ -3,881 +3,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tucson Plumbing Pros | Best Plumbers in Tucson, AZ</title>
-    <meta name="description" content="Find the best plumbers in Tucson, AZ. Compare top-rated, licensed, and insured plumbers. Read reviews, check hours, and get free quotes.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Best Plumbers in Tucson, AZ</title>
+    <meta name="description" content="Find the best plumbers in Tucson, AZ. Top-rated, licensed, and insured plumber services for residential and commercial needs.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
-        .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-        /* ── HEADER ── */
-        header { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); color: white; padding: 64px 0 48px; text-align: center; position: relative; overflow: hidden; }
-        header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
-        header .container { position: relative; z-index: 1; }
-        .logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-        .logo-icon { width: 44px; height: 44px; background: #3b82f6; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 4px 12px rgba(59,130,246,0.3); }
-        .logo-text { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; }
-        .logo-text span { color: #60a5fa; }
-        header h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
-        header p { font-size: 1.15rem; color: #94a3b8; max-width: 600px; margin: 0 auto; }
-        .header-stats { display: flex; justify-content: center; gap: 40px; margin-top: 32px; flex-wrap: wrap; }
-        .header-stat { text-align: center; }
-        .header-stat .num { font-size: 1.8rem; font-weight: 800; color: #60a5fa; }
-        .header-stat .label { font-size: 0.85rem; color: #64748b; }
-
-        /* ── NAV ── */
-        nav { background: #1e293b; padding: 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
-        nav .container { display: flex; gap: 0; overflow-x: auto; }
-        nav a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 14px 20px; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
-        nav a:hover { color: white; border-bottom-color: #3b82f6; background: rgba(255,255,255,0.03); }
-        nav a.active { color: white; border-bottom-color: #3b82f6; }
-
-        /* ── SECTIONS ── */
-        section { padding: 48px 0; }
-        section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 8px; color: #0f172a; }
-        .section-subtitle { color: #64748b; font-size: 0.95rem; margin-bottom: 28px; }
-
-        /* ── FILTERS ── */
-        .filters { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; align-items: center; }
-        .filters .search-box { flex: 1; min-width: 200px; padding: 10px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; font-family: inherit; outline: none; transition: border-color 0.15s; }
-        .filters .search-box:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
-        .filter-btn { padding: 10px 18px; border: 1px solid #e2e8f0; border-radius: 8px; background: white; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.15s; font-family: inherit; color: #475569; }
-        .filter-btn:hover { border-color: #3b82f6; color: #3b82f6; }
-        .filter-btn.active { background: #3b82f6; color: white; border-color: #3b82f6; }
-
-        /* ── PLUMBER CARD ── */
-        .plumber-card { background: white; border-radius: 12px; padding: 28px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04); border: 1px solid #e2e8f0; display: flex; justify-content: space-between; gap: 24px; transition: all 0.15s; }
-        .plumber-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #cbd5e1; }
-        .plumber-card.featured { border-left: 4px solid #3b82f6; }
-        .plumber-card .card-main { flex: 1; min-width: 0; }
-        .plumber-card .card-side { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; min-width: 140px; }
-        .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
-        .card-header h3 { font-size: 1.1rem; font-weight: 600; color: #0f172a; }
-        .featured-badge { background: #eff6ff; color: #2563eb; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid #bfdbfe; }
-        .verified-badge { color: #059669; font-size: 0.8rem; font-weight: 600; display: inline-flex; align-items: center; gap: 3px; }
-        .rating-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-        .stars { color: #f59e0b; font-size: 0.95rem; letter-spacing: 1px; }
-        .rating-num { font-weight: 700; color: #0f172a; font-size: 1rem; }
-        .reviews-count { color: #64748b; font-size: 0.85rem; }
-        .description { color: #475569; font-size: 0.9rem; margin-bottom: 12px; line-height: 1.5; }
-        .card-details { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.88rem; color: #64748b; }
-        .card-details span { display: flex; align-items: center; gap: 5px; }
-        .card-details a { color: #2563eb; text-decoration: none; }
-        .card-details a:hover { text-decoration: underline; }
-        .card-side .price-range { font-size: 0.8rem; color: #64748b; text-align: right; }
-        .card-side .actions { display: flex; flex-direction: column; gap: 8px; width: 100%; }
-        .btn { padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.88rem; text-align: center; transition: all 0.15s; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
-        .btn-call { background: #059669; color: white; }
-        .btn-call:hover { background: #047857; }
-        .btn-outline { background: transparent; color: #475569; border: 1px solid #e2e8f0; }
-        .btn-outline:hover { border-color: #94a3b8; }
-        .btn-primary { background: #3b82f6; color: white; }
-        .btn-primary:hover { background: #2563eb; }
-
-        /* ── GUIDE ── */
-        .guide-content { background: white; padding: 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
-        .guide-content h3 { font-size: 1rem; font-weight: 600; color: #0f172a; margin: 20px 0 8px; }
-        .guide-content h3:first-child { margin-top: 0; }
-        .guide-content p { color: #475569; font-size: 0.92rem; margin-bottom: 8px; }
-        .guide-content .tip { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 16px; border-radius: 6px; margin: 16px 0; font-size: 0.9rem; color: #166534; }
-
-        /* ── BLOG ── */
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-        .blog-card { background: white; border-radius: 12px; padding: 24px; border: 1px solid #e2e8f0; text-decoration: none; color: inherit; display: block; transition: all 0.15s; }
-        .blog-card:hover { border-color: #3b82f6; box-shadow: 0 4px 12px rgba(59,130,246,0.08); transform: translateY(-1px); }
-        .blog-card .tag { font-size: 0.75rem; font-weight: 600; color: #3b82f6; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .blog-card h3 { font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 8px; }
-        .blog-card p { color: #64748b; font-size: 0.88rem; }
-
-        /* ── FAQ ── */
-        .faq-section { background: white; padding: 24px 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
-        .faq-item { border-bottom: 1px solid #f1f5f9; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: white; padding: 60px 0 40px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        nav { background: #2d3748; padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+        nav .container { display: flex; gap: 25px; flex-wrap: wrap; }
+        nav a { color: #e2e8f0; text-decoration: none; font-size: 0.95rem; padding: 5px 0; }
+        nav a:hover { color: white; }
+        section { padding: 40px 0; }
+        section h2 { font-size: 1.8rem; margin-bottom: 25px; color: #1a365d; }
+        .plumber-card { background: white; border-radius: 10px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e2e8f0; }
+        .plumber-card.featured { border-left-color: #f6ad55; }
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 12px; flex-wrap: wrap; }
+        .card-header h3 { font-size: 1.2rem; color: #1a365d; flex: 1; }
+        .rating { color: #f6ad55; font-size: 1.1rem; }
+        .rating-num { color: #718096; font-size: 0.9rem; margin-left: 5px; }
+        .featured-badge { background: #fefcbf; color: #744210; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .description { color: #4a5568; margin-bottom: 12px; }
+        .card-details { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.9rem; color: #718096; margin-bottom: 15px; }
+        .card-details a { color: #3182ce; text-decoration: none; }
+        .card-actions { display: flex; gap: 10px; }
+        .btn { padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .btn-call { background: #38a169; color: white; }
+        .btn-call:hover { background: #2f855a; }
+        .btn-quote { background: #3182ce; color: white; }
+        .btn-quote:hover { background: #2b6cb0; }
+        
+        .guide-content, .faq-section, .contact-section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .faq-item { cursor: pointer; padding: 15px 0; border-bottom: 1px solid #edf2f7; }
+        .faq-item h3 { font-size: 1rem; color: #1a365d; }
+        .faq-item .answer { display: none; margin-top: 8px; color: #4a5568; }
+        .faq-item.open .answer { display: block; }
         .faq-item:last-child { border-bottom: none; }
-        .faq-question { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 18px 0; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 0.95rem; font-weight: 600; color: #0f172a; text-align: left; }
-        .faq-question:hover { color: #3b82f6; }
-        .faq-question::after { content: '+'; font-size: 1.3rem; color: #94a3b8; transition: transform 0.2s; }
-        .faq-item.open .faq-question::after { content: '−'; }
-        .faq-answer { display: none; padding: 0 0 18px; color: #475569; font-size: 0.9rem; line-height: 1.6; }
-        .faq-item.open .faq-answer { display: block; }
-
-        /* ── CONTACT ── */
-        .contact-section { background: white; padding: 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; max-width: 600px; margin: 0 auto; }
-        .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 12px 14px; margin-bottom: 14px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.92rem; font-family: inherit; outline: none; transition: border-color 0.15s; }
-        .contact-form input:focus, .contact-form textarea:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
-        .contact-form textarea { min-height: 110px; resize: vertical; }
-        .contact-form button { width: 100%; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; background: #3b82f6; color: white; transition: background 0.15s; font-family: inherit; }
-        .contact-form button:hover { background: #2563eb; }
-        .contact-note { text-align: center; font-size: 0.8rem; color: #94a3b8; margin-top: 12px; }
-
-        /* ── FOOTER ── */
-        footer { background: #0f172a; color: #64748b; text-align: center; padding: 36px 0; font-size: 0.88rem; border-top: 1px solid #1e293b; }
-        footer a { color: #60a5fa; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-        .footer-links { display: flex; justify-content: center; gap: 24px; margin: 12px 0; flex-wrap: wrap; }
-        .footer-links a { color: #94a3b8; font-size: 0.85rem; }
-
-        /* ── DARK SECTION BG ── */
-        .bg-muted { background: #f1f5f9; }
-
-        /* ── RESPONSIVE ── */
-        @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .logo-text { font-size: 1.2rem; }
-            .plumber-card { flex-direction: column; padding: 20px; }
-            .plumber-card .card-side { align-items: stretch; min-width: 0; }
-            .card-side .actions { flex-direction: row; }
-            .card-side .actions .btn { flex: 1; }
-            .header-stats { gap: 24px; }
-            nav .container { gap: 0; }
-        }
+        
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .blog-card { background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-decoration: none; color: inherit; display: block; }
+        .blog-card h3 { color: #1a365d; font-size: 1.05rem; margin-bottom: 10px; }
+        .blog-card p { color: #4a5568; font-size: 0.9rem; }
+        .blog-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); transition: all 0.2s; }
+        
+        .contact-form { max-width: 600px; margin: 0 auto; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; }
+        .contact-form textarea { min-height: 120px; }
+        .contact-form button { background: #3182ce; color: white; border: none; padding: 12px 30px; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+        .contact-form button:hover { background: #2b6cb0; }
+        footer { background: #1a202c; color: #a0aec0; text-align: center; padding: 30px 0; font-size: 0.9rem; }
+        footer a { color: #63b3ed; text-decoration: none; }
+        @media (max-width: 768px) { header h1 { font-size: 1.8rem; } .card-header { flex-direction: column; align-items: flex-start; } }
     </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="container">
-        <div class="logo">
-            <div class="logo-icon">🔧</div>
-            <span class="logo-text">Tucson<span>Plumbing</span>Pros</span>
-        </div>
-        <h1>Best Plumbers in Tucson, AZ</h1>
-        <p>Compare top-rated, licensed plumbers serving Tucson. Read reviews, check availability, and get free quotes — all in one place.</p>
-        <div class="header-stats">
-            <div class="header-stat">
-                <div class="num">20</div>
-                <div class="label">Plumbers Listed</div>
-            </div>
-            <div class="header-stat">
-                <div class="num">4.8</div>
-                <div class="label">Avg Rating</div>
-            </div>
-            <div class="header-stat">
-                <div class="num">24/7</div>
-                <div class="label">Emergency Available</div>
-            </div>
-        </div>
+        <h1>🔧 Best Plumbers in Tucson, AZ</h1>
+        <p>Your trusted source for top-rated plumber services in Tucson, AZ</p>
     </div>
 </header>
 
-<!-- NAV -->
 <nav>
     <div class="container">
-        <a href="#listings" class="active">All Plumbers</a>
-        <a href="#guide">Buying Guide</a>
+        <a href="#listings">Listings</a>
+        <a href="#guide">Guide</a>
         <a href="#blog">Blog</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Get a Quote</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<!-- LISTINGS -->
 <section id="listings">
     <div class="container">
         <h2>🏆 Top-Rated Plumbers in Tucson</h2>
-        <p class="section-subtitle">Last updated: June 06, 2026 · All listings verified</p>
+        <p style="margin-bottom: 20px; color: #718096;">Last updated: June 06, 2026</p>
         
-        <div class="filters">
-            <input type="text" class="search-box" placeholder="Search plumbers..." id="search" oninput="filterPlumbers()">
-            <button class="filter-btn active" onclick="filterByRating(this, 'all')">All</button>
-            <button class="filter-btn" onclick="filterByRating(this, '5')">5 ★</button>
-            <button class="filter-btn" onclick="filterByRating(this, '4.8')">4.8+ ★</button>
-            <button class="filter-btn" onclick="filterByRating(this, '4.5')">4.5+ ★</button>
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Imperial Plumbing</h3>
+            <div class="rating">★★★★★<span style='color:#e2e8f0;'></span> <span class="rating-num">5.0</span></div>
+            <span class="featured-badge">⭐ Featured</span>
         </div>
-
-        <div id="listings-container">
+        <p class="description">Imperial Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 1150 E Pennsylvania St, Tucson, AZ 85714, USA</span>
+            <span>📞 <a href="tel:(520) 222-7665">(520) 222-7665</a></span>
+            <span>🌐 <a href="https://www.imperialplumbing.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 222-7665" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Jobe & Sons Plumbing</h3>
+            <div class="rating">★★★★★<span style='color:#e2e8f0;'></span> <span class="rating-num">5.0</span></div>
+            <span class="featured-badge">⭐ Featured</span>
+        </div>
+        <p class="description">Jobe & Sons Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 1665 E 18th St #117, Tucson, AZ 85719, USA</span>
+            <span>📞 <a href="tel:(520) 850-4552">(520) 850-4552</a></span>
+            <span>🌐 <a href="http://jobeandsonsplumbing.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 850-4552" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Tucson Plumbing and Drain</h3>
+            <div class="rating">★★★★★<span style='color:#e2e8f0;'></span> <span class="rating-num">5.0</span></div>
+            <span class="featured-badge">⭐ Featured</span>
+        </div>
+        <p class="description">Tucson Plumbing and Drain is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 1955 W Grant Rd suite 125-L, Tucson, AZ 85745, USA</span>
+            <span>📞 <a href="tel:(520) 523-7377">(520) 523-7377</a></span>
+            <span>🌐 <a href="https://tucsonplumbinganddrain.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 523-7377" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>A.S.G. Plumbing Enterprises Tucson</h3>
+            <div class="rating">★★★★★<span style='color:#e2e8f0;'></span> <span class="rating-num">5.0</span></div>
             
-    <div class="plumber-card featured" data-name="cal's plumbing inc." data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Cal's Plumbing Inc.</h3>
-                <span class="featured-badge">⭐ Featured</span>
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(2694 reviews)</span>
-            </div>
-            <p class="description">A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service.</p>
-            <div class="card-details">
-                <span>📍 4749 S Irving Ave, Tucson, AZ 85714, USA</span>
-                <span>📞 <a href="tel:(520) 729-2945">(520) 729-2945</a></span>
-                <a href="https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 729-2945" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">A.S.G. Plumbing Enterprises Tucson is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 8852 E Pantano Bluff Dr, Tucson, AZ 85730, USA</span>
+            <span>📞 <a href="tel:(520) 351-2787">(520) 351-2787</a></span>
+            <span>🌐 <a href="https://tucsonazplumber.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 351-2787" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card featured" data-name="al coronado plumbing" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Al Coronado Plumbing</h3>
-                <span class="featured-badge">⭐ Featured</span>
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(2746 reviews)</span>
-            </div>
-            <p class="description">Family-owned Tucson plumbing company serving the area for decades. Specializes in residential plumbing repairs, water heater installation, and drain cleaning. Known for honest pricing and quality workmanship.</p>
-            <div class="card-details">
-                <span>📍 6149 N Travel Center Dr, Tucson, AZ 85741, USA</span>
-                <span>📞 <a href="tel:(520) 278-5780">(520) 278-5780</a></span>
-                <a href="https://alcoronadoplumbing.com/tucson-emergency-plumber/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Zing Plumbing</h3>
+            <div class="rating">★★★★★<span style='color:#e2e8f0;'></span> <span class="rating-num">5.0</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 278-5780" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Zing Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 3011 S Hearthstone Dr, Tucson, AZ 85730, USA</span>
+            <span>📞 <a href="tel:(520) 314-3734">(520) 314-3734</a></span>
+            <span>🌐 <a href="https://www.zingplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb-profile-tucson" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 314-3734" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card featured" data-name="plumber of tucson" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Plumber of Tucson</h3>
-                <span class="featured-badge">⭐ Featured</span>
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(351 reviews)</span>
-            </div>
-            <p class="description">Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured.</p>
-            <div class="card-details">
-                <span>📍 2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA</span>
-                <span>📞 <a href="tel:(520) 900-9010">(520) 900-9010</a></span>
-                <a href="https://plumberoftucson.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Plumber of Tucson</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 900-9010" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured.</p>
+        <div class="card-details">
+            <span>📍 2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA</span>
+            <span>📞 <a href="tel:(520) 900-9010">(520) 900-9010</a></span>
+            <span>🌐 <a href="https://plumberoftucson.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 900-9010" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="cummings plumbing heating and cooling" data-rating="4.8">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Cummings Plumbing Heating and Cooling</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.8</span>
-                <span class="reviews-count">(3892 reviews)</span>
-            </div>
-            <p class="description">Cummings Plumbing Heating and Cooling provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 5141 N Casa Grande Hwy, Tucson, AZ 85743, USA</span>
-                <span>📞 <a href="tel:(520) 333-2121">(520) 333-2121</a></span>
-                <a href="https://cummingsplumbingtucsonaz.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Al Coronado Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 333-2121" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Family-owned Tucson plumbing company serving the area for decades. Specializes in residential plumbing repairs, water heater installation, and drain cleaning. Known for honest pricing and quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 6149 N Travel Center Dr, Tucson, AZ 85741, USA</span>
+            <span>📞 <a href="tel:(520) 278-5780">(520) 278-5780</a></span>
+            <span>🌐 <a href="https://alcoronadoplumbing.com/tucson-emergency-plumber/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 278-5780" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="imperial plumbing" data-rating="5">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Imperial Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★★</span>
-                <span class="rating-num">5</span>
-                <span class="reviews-count">(448 reviews)</span>
-            </div>
-            <p class="description">Imperial Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 1150 E Pennsylvania St, Tucson, AZ 85714, USA</span>
-                <span>📞 <a href="tel:(520) 222-7665">(520) 222-7665</a></span>
-                <a href="https://www.imperialplumbing.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Cal's Plumbing Inc.</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 222-7665" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service.</p>
+        <div class="card-details">
+            <span>📍 4749 S Irving Ave, Tucson, AZ 85714, USA</span>
+            <span>📞 <a href="tel:(520) 729-2945">(520) 729-2945</a></span>
+            <span>🌐 <a href="https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 729-2945" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="tucson plumbing" data-rating="4.7">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Tucson Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.7</span>
-                <span class="reviews-count">(288 reviews)</span>
-            </div>
-            <p class="description">Tucson Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 3322 N Richey Blvd, Tucson, AZ 85716, USA</span>
-                <span>📞 <a href="tel:(520) 881-6000">(520) 881-6000</a></span>
-                <a href="https://tucsonplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMB" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Fusion Plumbing & Air</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 881-6000" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Fusion Plumbing & Air is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 5150 N Casa Grande Hwy, Tucson, AZ 85743, USA</span>
+            <span>📞 <a href="tel:(520) 328-8957">(520) 328-8957</a></span>
+            <span>🌐 <a href="https://fusioncools.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 328-8957" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="ram plumbing, inc." data-rating="4.8">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Ram Plumbing, Inc.</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.8</span>
-                <span class="reviews-count">(474 reviews)</span>
-            </div>
-            <p class="description">Ram Plumbing, Inc. provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 2500 N Coyote Dr Suite 112, Tucson, AZ 85745, USA</span>
-                <span>📞 <a href="tel:(520) 999-2647">(520) 999-2647</a></span>
-                <a href="https://www.ramplumbingaz.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Code Blue Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 999-2647" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Code Blue Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 3448 N 1st Ave, Tucson, AZ 85719, USA</span>
+            <span>📞 <a href="tel:(520) 297-9949">(520) 297-9949</a></span>
+            <span>🌐 <a href="https://codeblueaz.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 297-9949" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="code blue plumbing" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Code Blue Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(507 reviews)</span>
-            </div>
-            <p class="description">Code Blue Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 3448 N 1st Ave, Tucson, AZ 85719, USA</span>
-                <span>📞 <a href="tel:(520) 297-9949">(520) 297-9949</a></span>
-                <a href="https://codeblueaz.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Economy Plumbing Service LLC</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 297-9949" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Economy Plumbing Service LLC is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 7015 E 21st St, Tucson, AZ 85710, USA</span>
+            <span>📞 <a href="tel:(520) 885-3510">(520) 885-3510</a></span>
+            <span>🌐 <a href="https://www.economyplumbingservicellc.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 885-3510" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="fusion plumbing & air" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Fusion Plumbing & Air</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(921 reviews)</span>
-            </div>
-            <p class="description">Fusion Plumbing & Air provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 5150 N Casa Grande Hwy, Tucson, AZ 85743, USA</span>
-                <span>📞 <a href="tel:(520) 328-8957">(520) 328-8957</a></span>
-                <a href="https://fusioncools.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Dunn Plumbing and Drain Service LLC</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 328-8957" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Dunn Plumbing and Drain Service LLC is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 1650 E 18th St # Q, Tucson, AZ 85719, USA</span>
+            <span>📞 <a href="tel:(520) 310-0551">(520) 310-0551</a></span>
+            <span>🌐 <a href="http://dunnplumbingservice.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 310-0551" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="silverado rooter & plumbing" data-rating="4.7">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Silverado Rooter & Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.7</span>
-                <span class="reviews-count">(1015 reviews)</span>
-            </div>
-            <p class="description">Silverado Rooter & Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 3670 N Stone Ave, Tucson, AZ 85705, USA</span>
-                <span>📞 <a href="tel:(520) 696-0000">(520) 696-0000</a></span>
-                <a href="https://www.silveradoplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Cummings Plumbing Heating and Cooling</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 696-0000" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Cummings Plumbing Heating and Cooling is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 5141 N Casa Grande Hwy, Tucson, AZ 85743, USA</span>
+            <span>📞 <a href="tel:(520) 333-2121">(520) 333-2121</a></span>
+            <span>🌐 <a href="https://cummingsplumbingtucsonaz.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 333-2121" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="mr. rooter plumbing of tucson" data-rating="4.7">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Mr. Rooter Plumbing of Tucson</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.7</span>
-                <span class="reviews-count">(1823 reviews)</span>
-            </div>
-            <p class="description">Mr. Rooter Plumbing of Tucson provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 4030 E Michigan St, Tucson, AZ 85714, USA</span>
-                <span>📞 <a href="tel:(520) 448-2253">(520) 448-2253</a></span>
-                <a href="https://www.mrrooter.com/tucson/?cid=LSTL_MRR000199&utm_source=gmb&utm_campaign=local&utm_medium=organic" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Ram Plumbing, Inc.</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 448-2253" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Ram Plumbing, Inc. is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 2500 N Coyote Dr Suite 112, Tucson, AZ 85745, USA</span>
+            <span>📞 <a href="tel:(520) 999-2647">(520) 999-2647</a></span>
+            <span>🌐 <a href="https://www.ramplumbingaz.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 999-2647" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="economy plumbing service llc" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Economy Plumbing Service LLC</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(630 reviews)</span>
-            </div>
-            <p class="description">Economy Plumbing Service LLC provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 7015 E 21st St, Tucson, AZ 85710, USA</span>
-                <span>📞 <a href="tel:(520) 885-3510">(520) 885-3510</a></span>
-                <a href="https://www.economyplumbingservicellc.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Curtis Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 885-3510" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area.</p>
+        <div class="card-details">
+            <span>📍 4281 E Tennessee St, Tucson, AZ 85714, USA</span>
+            <span>📞 <a href="tel:(520) 323-7697">(520) 323-7697</a></span>
+            <span>🌐 <a href="https://curtisplumbing.net/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 323-7697" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="jobe & sons plumbing" data-rating="5">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Jobe & Sons Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★★</span>
-                <span class="rating-num">5</span>
-                <span class="reviews-count">(508 reviews)</span>
-            </div>
-            <p class="description">Jobe & Sons Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 1665 E 18th St #117, Tucson, AZ 85719, USA</span>
-                <span>📞 <a href="tel:(520) 850-4552">(520) 850-4552</a></span>
-                <a href="http://jobeandsonsplumbing.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Plumber Kings</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 850-4552" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Plumber Kings is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 5025 E 29th St, Tucson, AZ 85711, USA</span>
+            <span>📞 <a href="tel:(520) 447-6991">(520) 447-6991</a></span>
+            <span>🌐 <a href="http://www.theplumberkings.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 447-6991" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="curtis plumbing" data-rating="4.8">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Curtis Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.8</span>
-                <span class="reviews-count">(222 reviews)</span>
-            </div>
-            <p class="description">A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area.</p>
-            <div class="card-details">
-                <span>📍 4281 E Tennessee St, Tucson, AZ 85714, USA</span>
-                <span>📞 <a href="tel:(520) 323-7697">(520) 323-7697</a></span>
-                <a href="https://curtisplumbing.net/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Plumbing 360 LLC</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 323-7697" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Plumbing 360 LLC is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 7014 E Golf Links Rd #11, Tucson, AZ 85730, USA</span>
+            <span>📞 <a href="tel:(520) 889-2900">(520) 889-2900</a></span>
+            <span>🌐 <a href="https://plumbingtucson.com/" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 889-2900" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="plumber kings" data-rating="4.8">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Plumber Kings</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.8</span>
-                <span class="reviews-count">(344 reviews)</span>
-            </div>
-            <p class="description">Plumber Kings provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 5025 E 29th St, Tucson, AZ 85711, USA</span>
-                <span>📞 <a href="tel:(520) 447-6991">(520) 447-6991</a></span>
-                <a href="http://www.theplumberkings.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Tucson Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.7</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 447-6991" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Tucson Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 3322 N Richey Blvd, Tucson, AZ 85716, USA</span>
+            <span>📞 <a href="tel:(520) 881-6000">(520) 881-6000</a></span>
+            <span>🌐 <a href="https://tucsonplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMB" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 881-6000" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="dunn plumbing and drain service llc" data-rating="4.9">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Dunn Plumbing and Drain Service LLC</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.9</span>
-                <span class="reviews-count">(354 reviews)</span>
-            </div>
-            <p class="description">Dunn Plumbing and Drain Service LLC provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 1650 E 18th St # Q, Tucson, AZ 85719, USA</span>
-                <span>📞 <a href="tel:(520) 310-0551">(520) 310-0551</a></span>
-                <a href="http://dunnplumbingservice.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Silverado Rooter & Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.7</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 310-0551" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Silverado Rooter & Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 3670 N Stone Ave, Tucson, AZ 85705, USA</span>
+            <span>📞 <a href="tel:(520) 696-0000">(520) 696-0000</a></span>
+            <span>🌐 <a href="https://www.silveradoplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            <a href="tel:(520) 696-0000" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
-    <div class="plumber-card" data-name="tucson plumbing and drain" data-rating="5">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Tucson Plumbing and Drain</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★★</span>
-                <span class="rating-num">5</span>
-                <span class="reviews-count">(159 reviews)</span>
-            </div>
-            <p class="description">Tucson Plumbing and Drain provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 1955 W Grant Rd suite 125-L, Tucson, AZ 85745, USA</span>
-                <span>📞 <a href="tel:(520) 523-7377">(520) 523-7377</a></span>
-                <a href="https://tucsonplumbinganddrain.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Mr. Rooter Plumbing of Tucson</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.7</span></div>
+            
         </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 523-7377" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <p class="description">Mr. Rooter Plumbing of Tucson is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 4030 E Michigan St, Tucson, AZ 85714, USA</span>
+            <span>📞 <a href="tel:(520) 448-2253">(520) 448-2253</a></span>
+            <span>🌐 <a href="https://www.mrrooter.com/tucson/?cid=LSTL_MRR000199&utm_source=gmb&utm_campaign=local&utm_medium=organic" target="_blank" rel="noopener">Website</a></span>
         </div>
-    </div>
-    <div class="plumber-card" data-name="a.s.g. plumbing enterprises tucson" data-rating="5">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>A.S.G. Plumbing Enterprises Tucson</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★★</span>
-                <span class="rating-num">5</span>
-                <span class="reviews-count">(268 reviews)</span>
-            </div>
-            <p class="description">A.S.G. Plumbing Enterprises Tucson provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 8852 E Pantano Bluff Dr, Tucson, AZ 85730, USA</span>
-                <span>📞 <a href="tel:(520) 351-2787">(520) 351-2787</a></span>
-                <a href="https://tucsonazplumber.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
-        </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 351-2787" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
-        </div>
-    </div>
-    <div class="plumber-card" data-name="plumbing 360 llc" data-rating="4.8">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Plumbing 360 LLC</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★½</span>
-                <span class="rating-num">4.8</span>
-                <span class="reviews-count">(255 reviews)</span>
-            </div>
-            <p class="description">Plumbing 360 LLC provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 7014 E Golf Links Rd #11, Tucson, AZ 85730, USA</span>
-                <span>📞 <a href="tel:(520) 889-2900">(520) 889-2900</a></span>
-                <a href="https://plumbingtucson.com/" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
-        </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 889-2900" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
-        </div>
-    </div>
-    <div class="plumber-card" data-name="zing plumbing" data-rating="5">
-        <div class="card-main">
-            <div class="card-header">
-                <h3>Zing Plumbing</h3>
-                
-                <span class="verified-badge">✓ Verified</span>
-            </div>
-            <div class="rating-row">
-                <span class="stars">★★★★★</span>
-                <span class="rating-num">5</span>
-                <span class="reviews-count">(207 reviews)</span>
-            </div>
-            <p class="description">Zing Plumbing provides professional plumbing services to the Tucson area. Licensed, bonded, and insured with a commitment to quality workmanship and customer satisfaction.</p>
-            <div class="card-details">
-                <span>📍 3011 S Hearthstone Dr, Tucson, AZ 85730, USA</span>
-                <span>📞 <a href="tel:(520) 314-3734">(520) 314-3734</a></span>
-                <a href="https://www.zingplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb-profile-tucson" target="_blank" rel="noopener">🌐 Website</a>
-            </div>
-        </div>
-        <div class="card-side">
-            <div class="price-range">Call for pricing</div>
-            <div class="actions">
-                <a href="tel:(520) 314-3734" class="btn btn-call">📞 Call Now</a>
-                <a href="#contact" class="btn btn-outline">Get Quote</a>
-            </div>
+        <div class="card-actions">
+            <a href="tel:(520) 448-2253" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
     </div>
     </div>
-</div>
 </section>
 
-<!-- GUIDE -->
-<section id="guide" class="bg-muted">
+<section id="guide" style="background: #edf2f7;">
     <div class="container">
         <h2>📖 How to Choose a Plumber in Tucson</h2>
-        <p class="section-subtitle">Everything you need to know before hiring</p>
         <div class="guide-content">
-            <h3>1. Check Licensing & Insurance</h3>
-            <p>In Arizona, all plumbers must be licensed with the <strong>Arizona Registrar of Contractors</strong>. Verify their license number and ensure they carry general liability insurance. Never hire an unlicensed plumber — it puts your home at risk.</p>
-            
-            <h3>2. Read Reviews Carefully</h3>
-            <p>Look beyond the star rating. Read 5-10 recent reviews for patterns: Do they show up on time? Do they clean up? Are there complaints about hidden fees? We've curated Tucson's best-reviewed plumbers for you.</p>
-            
+            <p>Finding the right plumber in Tucson doesn't have to be stressful. Here are some tips:</p>
+            <h3>1. Check Licensing and Insurance</h3>
+            <p>Always verify that your plumber is licensed and insured. In Arizona, the Registrar of Contractors handles licensing.</p>
+            <h3>2. Read Reviews</h3>
+            <p>Check Google, Yelp, and BBB ratings. Look for consistent 4+ star reviews.</p>
             <h3>3. Get Multiple Quotes</h3>
-            <p>For any job over $500, get at least 3 quotes. Tucson plumbers typically charge $75-150/hr plus materials. Be wary of quotes that are significantly lower than others — corners get cut. Use our <a href="#contact">free quote form</a> to reach multiple plumbers at once.</p>
-            
-            <div class="tip">💡 <strong>Tucson Tip:</strong> Many Tucson plumbers offer discounts for seniors, military, and first-time customers. Always ask!</div>
-            
-            <h3>4. Ask About Emergency Service</h3>
-            <p>Tucson's extreme heat and monsoon season can cause sudden plumbing failures. Many plumbers on our list offer 24/7 emergency service — look for the ⚡ badge. A burst pipe at 2 AM is no time to be searching.</p>
-            
-            <h3>5. Check Service Area & Specialties</h3>
-            <p>Tucson spans a huge area. Some plumbers specialize in certain neighborhoods or types of work (slab leaks, repiping, water heaters). Confirm they serve your specific area and handle your type of job before booking.</p>
+            <p>For non-emergency work, get at least 3 quotes. Be wary of extremely low bids.</p>
+            <h3>4. Ask About Experience</h3>
+            <p>Different jobs require different expertise. Ask how many similar projects they've completed.</p>
+            <h3>5. Check Availability</h3>
+            <p>Emergencies happen. A plumber with 24/7 service can save you thousands in damage.</p>
         </div>
     </div>
 </section>
 
-<!-- BLOG -->
 <section id="blog">
     <div class="container">
-        <h2>📝 Tucson Plumbing Blog</h2>
-        <p class="section-subtitle">Tips, guides, and local advice for Tucson homeowners</p>
+        <h2>📝 Tucson Plumber Blog</h2>
         <div class="blog-grid">
+            
             <a href="blog/copper-vs-pex.html" class="blog-card">
-                <div class="tag">Pipe Repair</div>
-                <h3>Copper vs. PEX: Which Pipe Is Right for Your Tucson Home?</h3>
-                <p>We break down the pros and cons of copper and PEX piping in Tucson's unique climate and soil conditions.</p>
+                <h3>Copper Vs Pex</h3>
+                <p>Read our guide on copper vs pex for Tucson homeowners...</p>
             </a>
             <a href="blog/emergency-vs-scheduled.html" class="blog-card">
-                <div class="tag">Emergency Prep</div>
-                <h3>Emergency Plumber vs. Scheduled Repair: When to Call</h3>
-                <p>Learn the difference between a true emergency and a problem that can wait until morning — and how much each costs.</p>
+                <h3>Emergency Vs Scheduled</h3>
+                <p>Read our guide on emergency vs scheduled for Tucson homeowners...</p>
             </a>
             <a href="blog/hard-water-damage.html" class="blog-card">
-                <div class="tag">Water Quality</div>
-                <h3>3 Signs Your Tucson Home Has Hard Water Damage</h3>
-                <p>Tucson's hard water is notorious. Here's how to spot the damage before it costs you thousands in pipe replacement.</p>
+                <h3>Hard Water Damage</h3>
+                <p>Read our guide on hard water damage for Tucson homeowners...</p>
             </a>
             <a href="blog/monsoon-plumbing.html" class="blog-card">
-                <div class="tag">Seasonal</div>
-                <h3>How Monsoon Season Affects Your Plumbing in Tucson</h3>
-                <p>Monsoon rains can overwhelm your drainage and cause sewer backups. Protect your home with these tips.</p>
+                <h3>Monsoon Plumbing</h3>
+                <p>Read our guide on monsoon plumbing for Tucson homeowners...</p>
             </a>
             <a href="blog/water-heater-maintenance.html" class="blog-card">
-                <div class="tag">Maintenance</div>
-                <h3>Water Heater Maintenance for Arizona Homes</h3>
-                <p>Extend your water heater's life by years with these simple maintenance steps tailored to Arizona's hard water.</p>
+                <h3>Water Heater Maintenance</h3>
+                <p>Read our guide on water heater maintenance for Tucson homeowners...</p>
             </a>
         </div>
     </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq" class="bg-muted">
+<section id="faq" style="background: #edf2f7;">
     <div class="container">
         <h2>❓ Frequently Asked Questions</h2>
-        <p class="section-subtitle">Common questions about hiring plumbers in Tucson</p>
         <div class="faq-section">
-            <div class="faq-item open">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How much does a plumber cost in Tucson?</button>
-                <div class="faq-answer">Most Tucson plumbers charge between <strong>$75-150 per hour</strong>, with a typical service call fee of $85-125. Small repairs (drain clearing, faucet repair) run $150-400. Larger jobs like water heater replacement cost $800-1,500, and repiping can range from $3,000-8,000. Always get multiple quotes.</div>
+            <div class="faq-item open" onclick="this.classList.toggle('open')">
+                <h3>How much does a plumber cost in Tucson?</h3>
+                <div class="answer">Prices vary by job. Small repairs typically range from $150-400, while larger projects can cost $1,000-5,000. Get multiple quotes for the best value.</div>
             </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Are these plumbers licensed and insured?</button>
-                <div class="faq-answer">All plumbers listed on Tucson Plumbing Pros hold active Arizona licenses with the Registrar of Contractors. We recommend verifying their license number and confirming insurance before any work begins.</div>
+            <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h3>Are these plumbers licensed?</h3>
+                <div class="answer">All plumbers listed on our site are licensed and insured in the state of Arizona. We recommend confirming directly before hiring.</div>
             </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Do these plumbers offer 24/7 emergency service?</button>
-                <div class="faq-answer">Many of the plumbers on our list offer 24/7 emergency service, though response times and rates vary. Emergency calls typically cost 1.5-2x standard rates. Call ahead to confirm availability for your specific situation.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What should I ask before hiring a plumber?</button>
-                <div class="faq-answer">Always ask: (1) Are you licensed and insured? (2) Do you offer a warranty on your work? (3) Can you provide a written estimate? (4) How long will the job take? (5) Are there any additional fees? Getting answers in writing protects both parties.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How often should I have my plumbing inspected?</button>
-                <div class="faq-answer">We recommend a professional plumbing inspection <strong>once a year</strong> for Tucson homes. The city's hard water and extreme temperature swings can accelerate pipe wear. Regular inspections catch small issues before they become expensive emergencies.</div>
+            <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h3>Do they offer emergency service?</h3>
+                <div class="answer">Many of the plumbers listed offer 24/7 emergency service. Check individual listings for availability.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <div class="container">
-        <h2>📬 Get Free Quotes From Tucson Plumbers</h2>
-        <p class="section-subtitle">Describe your project and we'll connect you with top-rated plumbers</p>
+        <h2>📬 Get a Free Quote</h2>
         <div class="contact-section">
-            <form class="contact-form" action="https://formsubmit.co/gloaminggallery@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Your Full Name" required>
-                <input type="email" name="email" placeholder="Your Email Address" required>
-                <input type="tel" name="phone" placeholder="Your Phone Number">
-                <select name="service">
-                    <option value="">What type of plumbing service?</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="drain">Drain Cleaning</option>
-                    <option value="water-heater">Water Heater</option>
-                    <option value="repiping">Repiping</option>
-                    <option value="leak">Leak Detection / Repair</option>
-                    <option value="sewer">Sewer / Septic</option>
-                    <option value="other">Other</option>
-                </select>
-                <textarea name="message" placeholder="Describe what you need... (e.g., 'Kitchen sink is clogged, need someone this afternoon')" required></textarea>
-                <input type="hidden" name="_subject" value="Quote Request - Tucson Plumbing Pros">
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit">Get Free Quotes →</button>
-                <div class="contact-note">🔒 Your info is never shared without your permission</div>
-            </form>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/gloaminggallery@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                    <textarea name="message" placeholder="Describe what you need..." required></textarea>
+                    <input type="hidden" name="_subject" value="Tucson Plumber Quote Request">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit">Request Free Quote</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <div class="container">
-        <div class="logo" style="justify-content:center;margin-bottom:12px;">
-            <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">🔧</div>
-            <span class="logo-text" style="font-size:1.1rem;">Tucson<span>Plumbing</span>Pros</span>
-        </div>
-        <p>Tucson's trusted directory for finding the best plumbers, verified and reviewed by real homeowners.</p>
-        <div class="footer-links">
-            <a href="#listings">All Plumbers</a>
-            <a href="#guide">Buying Guide</a>
-            <a href="#blog">Blog</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Get a Quote</a>
-        </div>
-        <p>© 2026 Tucson Plumbing Pros — <a href="#listings">Browse Plumbers in Tucson, AZ</a></p>
+        <p>Best Plumbers in Tucson, AZ | Helping Tucson homeowners find trusted plumber services</p>
+        <p>© 2025 — <a href="#listings">Browse Plumbers</a> | <a href="#contact">Get a Quote</a></p>
     </div>
 </footer>
 
-<!-- SCRIPTS -->
 <script>
-// FAQ - open first by default
-document.querySelector('.faq-item.open .faq-answer').style.display = 'block';
+    document.querySelector('.faq-item')?.classList.add('open');
+</script>
 
-// Plumber data for filtering
-const PLUMBERS = [
+</body>
+</html>

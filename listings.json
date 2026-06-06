@@ -5,20 +5,21 @@
   "updated": "2026-06-06",
   "businesses": [
     {
-      "name": "Cal's Plumbing Inc.",
-      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
+      "name": "Plumber of Tucson",
+      "address": "2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA",
       "rating": 4.9,
-      "total_ratings": 2694,
-      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
+      "total_ratings": 351,
+      "place_id": "ChIJ__-Po1Fw1oYRMM9-08W0cCQ",
       "types": [
         "establishment",
+        "general_contractor",
         "plumber",
         "point_of_interest",
         "store"
       ],
-      "phone": "(520) 729-2945",
-      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ",
-      "description": "A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service."
+      "phone": "(520) 900-9010",
+      "website": "https://plumberoftucson.com/",
+      "description": "Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured."
     },
     {
       "name": "Al Coronado Plumbing",
@@ -39,23 +40,6 @@
       "description": "Family-owned Tucson plumbing company serving the area for decades. Specializes in residential plumbing repairs, water heater installation, and drain cleaning. Known for honest pricing and quality workmanship."
     },
     {
-      "name": "Plumber of Tucson",
-      "address": "2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA",
-      "rating": 4.9,
-      "total_ratings": 351,
-      "place_id": "ChIJ__-Po1Fw1oYRMM9-08W0cCQ",
-      "types": [
-        "establishment",
-        "general_contractor",
-        "plumber",
-        "point_of_interest",
-        "store"
-      ],
-      "phone": "(520) 900-9010",
-      "website": "https://plumberoftucson.com/",
-      "description": "Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured."
-    },
-    {
       "name": "Cummings Plumbing Heating and Cooling",
       "address": "5141 N Casa Grande Hwy, Tucson, AZ 85743, USA",
       "rating": 4.8,
@@ -71,10 +55,26 @@
       "description": "Cummings Plumbing Heating and Cooling is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
     },
     {
+      "name": "Cal's Plumbing Inc.",
+      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
+      "rating": 4.9,
+      "total_ratings": 2694,
+      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest",
+        "store"
+      ],
+      "phone": "(520) 729-2945",
+      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ",
+      "description": "A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service."
+    },
+    {
       "name": "Imperial Plumbing",
       "address": "1150 E Pennsylvania St, Tucson, AZ 85714, USA",
       "rating": 5,
-      "total_ratings": 448,
+      "total_ratings": 449,
       "place_id": "ChIJF_Klm76bVmgRK9ih0kvzNzI",
       "types": [
         "establishment",
@@ -119,21 +119,6 @@
       "description": "Ram Plumbing, Inc. is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
     },
     {
-      "name": "Code Blue Plumbing",
-      "address": "3448 N 1st Ave, Tucson, AZ 85719, USA",
-      "rating": 4.9,
-      "total_ratings": 507,
-      "place_id": "ChIJ024DiNl01oYR31mZGD5FIio",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 297-9949",
-      "website": "https://codeblueaz.com/",
-      "description": "Code Blue Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
-    },
-    {
       "name": "Fusion Plumbing & Air",
       "address": "5150 N Casa Grande Hwy, Tucson, AZ 85743, USA",
       "rating": 4.9,
@@ -148,6 +133,21 @@
       "phone": "(520) 328-8957",
       "website": "https://fusioncools.com/",
       "description": "Fusion Plumbing & Air is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
+    },
+    {
+      "name": "Code Blue Plumbing",
+      "address": "3448 N 1st Ave, Tucson, AZ 85719, USA",
+      "rating": 4.9,
+      "total_ratings": 507,
+      "place_id": "ChIJ024DiNl01oYR31mZGD5FIio",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest"
+      ],
+      "phone": "(520) 297-9949",
+      "website": "https://codeblueaz.com/",
+      "description": "Code Blue Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
     },
     {
       "name": "Silverado Rooter & Plumbing",
@@ -195,6 +195,21 @@
       "description": "Economy Plumbing Service LLC is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
     },
     {
+      "name": "Curtis Plumbing",
+      "address": "4281 E Tennessee St, Tucson, AZ 85714, USA",
+      "rating": 4.8,
+      "total_ratings": 222,
+      "place_id": "ChIJ2Zt96TRl1oYR6F74ZcRhZBc",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest"
+      ],
+      "phone": "(520) 323-7697",
+      "website": "https://curtisplumbing.net/",
+      "description": "A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area."
+    },
+    {
       "name": "Jobe & Sons Plumbing",
       "address": "1665 E 18th St #117, Tucson, AZ 85719, USA",
       "rating": 5,
@@ -211,21 +226,6 @@
       "phone": "(520) 850-4552",
       "website": "http://jobeandsonsplumbing.com/",
       "description": "Jobe & Sons Plumbing is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
-    },
-    {
-      "name": "Curtis Plumbing",
-      "address": "4281 E Tennessee St, Tucson, AZ 85714, USA",
-      "rating": 4.8,
-      "total_ratings": 222,
-      "place_id": "ChIJ2Zt96TRl1oYR6F74ZcRhZBc",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 323-7697",
-      "website": "https://curtisplumbing.net/",
-      "description": "A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area."
     },
     {
       "name": "Plumber Kings",
