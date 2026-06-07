@@ -5,22 +5,6 @@
   "updated": "2026-06-07",
   "businesses": [
     {
-      "name": "Plumber of Tucson",
-      "address": "2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA",
-      "rating": 4.9,
-      "total_ratings": 351,
-      "place_id": "ChIJ__-Po1Fw1oYRMM9-08W0cCQ",
-      "types": [
-        "establishment",
-        "general_contractor",
-        "plumber",
-        "point_of_interest",
-        "store"
-      ],
-      "phone": "(520) 900-9010",
-      "website": "https://plumberoftucson.com/"
-    },
-    {
       "name": "Al Coronado Plumbing",
       "address": "6149 N Travel Center Dr, Tucson, AZ 85741, USA",
       "rating": 4.9,
@@ -52,6 +36,37 @@
       "website": "https://cummingsplumbingtucsonaz.com/"
     },
     {
+      "name": "Plumber of Tucson",
+      "address": "2420 W Ruthrauff Rd #100, Tucson, AZ 85705, USA",
+      "rating": 4.9,
+      "total_ratings": 351,
+      "place_id": "ChIJ__-Po1Fw1oYRMM9-08W0cCQ",
+      "types": [
+        "establishment",
+        "general_contractor",
+        "plumber",
+        "point_of_interest",
+        "store"
+      ],
+      "phone": "(520) 900-9010",
+      "website": "https://plumberoftucson.com/"
+    },
+    {
+      "name": "Cal's Plumbing Inc.",
+      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
+      "rating": 4.9,
+      "total_ratings": 2693,
+      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest",
+        "store"
+      ],
+      "phone": "(520) 729-2945",
+      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ"
+    },
+    {
       "name": "Imperial Plumbing",
       "address": "1150 E Pennsylvania St, Tucson, AZ 85714, USA",
       "rating": 5,
@@ -81,21 +96,6 @@
       ],
       "phone": "(520) 881-6000",
       "website": "https://tucsonplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMB"
-    },
-    {
-      "name": "Cal's Plumbing Inc.",
-      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
-      "rating": 4.9,
-      "total_ratings": 2693,
-      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest",
-        "store"
-      ],
-      "phone": "(520) 729-2945",
-      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ"
     },
     {
       "name": "Ram Plumbing, Inc.",
@@ -214,20 +214,6 @@
       "website": "https://curtisplumbing.net/"
     },
     {
-      "name": "Dunn Plumbing and Drain Service LLC",
-      "address": "1650 E 18th St # Q, Tucson, AZ 85719, USA",
-      "rating": 4.9,
-      "total_ratings": 355,
-      "place_id": "ChIJp6ZrB8Z01oYRc7tPwEpngow",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 310-0551",
-      "website": "http://dunnplumbingservice.com/"
-    },
-    {
       "name": "Tucson Plumbing and Drain",
       "address": "1955 W Grant Rd suite 125-L, Tucson, AZ 85745, USA",
       "rating": 5,
@@ -240,6 +226,20 @@
       ],
       "phone": "(520) 523-7377",
       "website": "https://tucsonplumbinganddrain.com/"
+    },
+    {
+      "name": "Dunn Plumbing and Drain Service LLC",
+      "address": "1650 E 18th St # Q, Tucson, AZ 85719, USA",
+      "rating": 4.9,
+      "total_ratings": 355,
+      "place_id": "ChIJp6ZrB8Z01oYRc7tPwEpngow",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest"
+      ],
+      "phone": "(520) 310-0551",
+      "website": "http://dunnplumbingservice.com/"
     },
     {
       "name": "Plumber Kings",
@@ -256,19 +256,18 @@
       "website": "http://www.theplumberkings.com/"
     },
     {
-      "name": "A.S.G. Plumbing Enterprises Tucson",
-      "address": "8852 E Pantano Bluff Dr, Tucson, AZ 85730, USA",
-      "rating": 5,
-      "total_ratings": 268,
-      "place_id": "ChIJYb1d9A1m1oYRI1uV3OqtYrg",
+      "name": "My Plumber Plumbing Services LLC",
+      "address": "307 E Grant Rd, Tucson, AZ 85705, USA",
+      "rating": 4.9,
+      "total_ratings": 367,
+      "place_id": "ChIJv23tEUR51oYRAwcBn3a2Kq8",
       "types": [
         "establishment",
-        "general_contractor",
         "plumber",
         "point_of_interest"
       ],
-      "phone": "(520) 351-2787",
-      "website": "https://tucsonazplumber.com/"
+      "phone": "(520) 313-7513",
+      "website": "https://www.myplumberps.com/"
     },
     {
       "name": "Plumbing 360 LLC",
