@@ -29,7 +29,7 @@ CONTACT_EMAIL = "gloaminggallery@gmail.com"
 URL_BASE = "https://ramzihech.github.io/TucsonPlumbingPros/"
 
 # Google Search Console verification — leave empty to omit
-GSC_VERIFICATION = ""
+GSC_VERIFICATION = "trXyfpRmYSGdJUfdcWqgdLS4-MqnJhu8WoM9M_FT2f8"
 
 # Google Analytics 4 measurement ID — leave empty to omit (format: G-XXXXXXXXXX)
 GA4_ID = ""

@@ -2,7 +2,7 @@
   "city": "Tucson",
   "state": "AZ",
   "niche": "Plumber",
-  "updated": "2026-06-06",
+  "updated": "2026-06-07",
   "businesses": [
     {
       "name": "Plumber of Tucson",
@@ -21,24 +21,10 @@
       "website": "https://plumberoftucson.com/"
     },
     {
-      "name": "Cummings Plumbing Heating and Cooling",
-      "address": "5141 N Casa Grande Hwy, Tucson, AZ 85743, USA",
-      "rating": 4.8,
-      "total_ratings": 3892,
-      "place_id": "ChIJEY8HWvh01oYRPZ5yiM1C0l8",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 333-2121",
-      "website": "https://cummingsplumbingtucsonaz.com/"
-    },
-    {
       "name": "Al Coronado Plumbing",
       "address": "6149 N Travel Center Dr, Tucson, AZ 85741, USA",
       "rating": 4.9,
-      "total_ratings": 2746,
+      "total_ratings": 2750,
       "place_id": "ChIJYW170Ttx1oYRHf2_1f1OEQo",
       "types": [
         "establishment",
@@ -52,10 +38,24 @@
       "website": "https://alcoronadoplumbing.com/tucson-emergency-plumber/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing"
     },
     {
+      "name": "Cummings Plumbing Heating and Cooling",
+      "address": "5141 N Casa Grande Hwy, Tucson, AZ 85743, USA",
+      "rating": 4.8,
+      "total_ratings": 3895,
+      "place_id": "ChIJEY8HWvh01oYRPZ5yiM1C0l8",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest"
+      ],
+      "phone": "(520) 333-2121",
+      "website": "https://cummingsplumbingtucsonaz.com/"
+    },
+    {
       "name": "Imperial Plumbing",
       "address": "1150 E Pennsylvania St, Tucson, AZ 85714, USA",
       "rating": 5,
-      "total_ratings": 449,
+      "total_ratings": 450,
       "place_id": "ChIJF_Klm76bVmgRK9ih0kvzNzI",
       "types": [
         "establishment",
@@ -83,6 +83,21 @@
       "website": "https://tucsonplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMB"
     },
     {
+      "name": "Cal's Plumbing Inc.",
+      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
+      "rating": 4.9,
+      "total_ratings": 2693,
+      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest",
+        "store"
+      ],
+      "phone": "(520) 729-2945",
+      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ"
+    },
+    {
       "name": "Ram Plumbing, Inc.",
       "address": "2500 N Coyote Dr Suite 112, Tucson, AZ 85745, USA",
       "rating": 4.8,
@@ -95,21 +110,6 @@
       ],
       "phone": "(520) 999-2647",
       "website": "https://www.ramplumbingaz.com/"
-    },
-    {
-      "name": "Fusion Plumbing & Air",
-      "address": "5150 N Casa Grande Hwy, Tucson, AZ 85743, USA",
-      "rating": 4.9,
-      "total_ratings": 921,
-      "place_id": "ChIJgW4ewA4L1oYRPHwU_uT1VCk",
-      "types": [
-        "establishment",
-        "general_contractor",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 328-8957",
-      "website": "https://fusioncools.com/"
     },
     {
       "name": "Code Blue Plumbing",
@@ -126,19 +126,19 @@
       "website": "https://codeblueaz.com/"
     },
     {
-      "name": "Cal's Plumbing Inc.",
-      "address": "4749 S Irving Ave, Tucson, AZ 85714, USA",
+      "name": "Fusion Plumbing & Air",
+      "address": "5150 N Casa Grande Hwy, Tucson, AZ 85743, USA",
       "rating": 4.9,
-      "total_ratings": 2694,
-      "place_id": "ChIJCQn4DiB71oYRdIEg9yO8cLM",
+      "total_ratings": 921,
+      "place_id": "ChIJgW4ewA4L1oYRPHwU_uT1VCk",
       "types": [
         "establishment",
+        "general_contractor",
         "plumber",
-        "point_of_interest",
-        "store"
+        "point_of_interest"
       ],
-      "phone": "(520) 729-2945",
-      "website": "https://calsplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Tucson-AZ"
+      "phone": "(520) 328-8957",
+      "website": "https://fusioncools.com/"
     },
     {
       "name": "Silverado Rooter & Plumbing",
@@ -169,18 +169,18 @@
       "website": "https://www.mrrooter.com/tucson/?cid=LSTL_MRR000199&utm_source=gmb&utm_campaign=local&utm_medium=organic"
     },
     {
-      "name": "Curtis Plumbing",
-      "address": "4281 E Tennessee St, Tucson, AZ 85714, USA",
-      "rating": 4.8,
-      "total_ratings": 222,
-      "place_id": "ChIJ2Zt96TRl1oYR6F74ZcRhZBc",
+      "name": "Economy Plumbing Service LLC",
+      "address": "7015 E 21st St, Tucson, AZ 85710, USA",
+      "rating": 4.9,
+      "total_ratings": 630,
+      "place_id": "ChIJa4dnNChv1oYRfMIfEUHp8Hg",
       "types": [
         "establishment",
         "plumber",
         "point_of_interest"
       ],
-      "phone": "(520) 323-7697",
-      "website": "https://curtisplumbing.net/"
+      "phone": "(520) 885-3510",
+      "website": "https://www.economyplumbingservicellc.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp"
     },
     {
       "name": "Jobe & Sons Plumbing",
@@ -200,18 +200,32 @@
       "website": "http://jobeandsonsplumbing.com/"
     },
     {
-      "name": "Economy Plumbing Service LLC",
-      "address": "7015 E 21st St, Tucson, AZ 85710, USA",
-      "rating": 4.9,
-      "total_ratings": 630,
-      "place_id": "ChIJa4dnNChv1oYRfMIfEUHp8Hg",
+      "name": "Curtis Plumbing",
+      "address": "4281 E Tennessee St, Tucson, AZ 85714, USA",
+      "rating": 4.8,
+      "total_ratings": 222,
+      "place_id": "ChIJ2Zt96TRl1oYR6F74ZcRhZBc",
       "types": [
         "establishment",
         "plumber",
         "point_of_interest"
       ],
-      "phone": "(520) 885-3510",
-      "website": "https://www.economyplumbingservicellc.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp"
+      "phone": "(520) 323-7697",
+      "website": "https://curtisplumbing.net/"
+    },
+    {
+      "name": "Dunn Plumbing and Drain Service LLC",
+      "address": "1650 E 18th St # Q, Tucson, AZ 85719, USA",
+      "rating": 4.9,
+      "total_ratings": 355,
+      "place_id": "ChIJp6ZrB8Z01oYRc7tPwEpngow",
+      "types": [
+        "establishment",
+        "plumber",
+        "point_of_interest"
+      ],
+      "phone": "(520) 310-0551",
+      "website": "http://dunnplumbingservice.com/"
     },
     {
       "name": "Tucson Plumbing and Drain",
@@ -226,20 +240,6 @@
       ],
       "phone": "(520) 523-7377",
       "website": "https://tucsonplumbinganddrain.com/"
-    },
-    {
-      "name": "Dunn Plumbing and Drain Service LLC",
-      "address": "1650 E 18th St # Q, Tucson, AZ 85719, USA",
-      "rating": 4.9,
-      "total_ratings": 354,
-      "place_id": "ChIJp6ZrB8Z01oYRc7tPwEpngow",
-      "types": [
-        "establishment",
-        "plumber",
-        "point_of_interest"
-      ],
-      "phone": "(520) 310-0551",
-      "website": "http://dunnplumbingservice.com/"
     },
     {
       "name": "Plumber Kings",
@@ -271,23 +271,6 @@
       "website": "https://tucsonazplumber.com/"
     },
     {
-      "name": "Zing Plumbing",
-      "address": "3011 S Hearthstone Dr, Tucson, AZ 85730, USA",
-      "rating": 5,
-      "total_ratings": 207,
-      "place_id": "ChIJI-pWnnJm1oYRYkCvuOd8EA4",
-      "types": [
-        "establishment",
-        "general_contractor",
-        "home_goods_store",
-        "plumber",
-        "point_of_interest",
-        "store"
-      ],
-      "phone": "(520) 314-3734",
-      "website": "https://www.zingplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb-profile-tucson"
-    },
-    {
       "name": "Plumbing 360 LLC",
       "address": "7014 E Golf Links Rd #11, Tucson, AZ 85730, USA",
       "rating": 4.8,
@@ -303,6 +286,23 @@
       ],
       "phone": "(520) 889-2900",
       "website": "https://plumbingtucson.com/"
+    },
+    {
+      "name": "Zing Plumbing",
+      "address": "3011 S Hearthstone Dr, Tucson, AZ 85730, USA",
+      "rating": 5,
+      "total_ratings": 207,
+      "place_id": "ChIJI-pWnnJm1oYRYkCvuOd8EA4",
+      "types": [
+        "establishment",
+        "general_contractor",
+        "home_goods_store",
+        "plumber",
+        "point_of_interest",
+        "store"
+      ],
+      "phone": "(520) 314-3734",
+      "website": "https://www.zingplumbing.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb-profile-tucson"
     }
   ]
 }
